@@ -6,8 +6,8 @@ organization := "com.example.ninjas"
 
 name := "kbilling-plans"
 
-version := "0.2"
+version := "0.2.1"
 
 scalaVersion := "2.10.3"
 
-libraryDependencies += "com.killingbilling" %% "kbilling-types" % "0.2"
+libraryDependencies += "com.killingbilling" %% "kbilling-types" % "0.2.1"
