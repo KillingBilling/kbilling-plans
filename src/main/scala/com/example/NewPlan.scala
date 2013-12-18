@@ -6,7 +6,7 @@ object NewPlan {
 
   val bones = new ServiceAccount {
 
-    def bonesSum(a: BigDecimal, b: BigDecimal): BigDecimal = ???
+    val sum = aggregates.sum
 
   }
 
