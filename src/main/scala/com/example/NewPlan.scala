@@ -2,6 +2,7 @@ package com.example
 
 import kbilling.types._
 
+@BillingPlan
 object NewPlan {
 
   object bones {
