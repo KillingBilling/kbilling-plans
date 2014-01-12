@@ -21,8 +21,8 @@ object ExamplePlan extends BillingPlan {
     })
   )
 
-  val notifications = Set[Notification](
-    Notification(a => a("USD") == 0, "zeroBalance")
+  val notifications = Map(
+    "zeroBalance" -> Notification(_("USD") < 0)
   )
 
 }

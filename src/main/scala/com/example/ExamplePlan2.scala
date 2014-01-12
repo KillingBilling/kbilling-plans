@@ -16,5 +16,5 @@ object ExamplePlan2 extends BillingPlan {
       a("BonesSUM") * normRate * cashback
     })
   )
-  val notifications = Set[Notification]()
+  val notifications: Map[String, Notification] = Map.empty
 }
