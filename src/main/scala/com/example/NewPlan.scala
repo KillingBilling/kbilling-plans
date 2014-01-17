@@ -13,12 +13,12 @@ object NewPlan {
 
   object usd {
 
-    def apply(`bones.sum`: BigDecimal): BigDecimal = {
+    def apply(bones$sum: BigDecimal): BigDecimal = {
       val normRate = BigDecimal(0.1)
       val discountRate = BigDecimal(0.05)
       val t = BigDecimal(4)
 
-      `bones.sum` match {
+      bones$sum match {
         case x if x <= t => x * normRate
         case x if x > t => t * normRate + (x - t) * discountRate
       }
@@ -26,6 +26,6 @@ object NewPlan {
 
   }
 
-  def zeroBalance(`usd`: BigDecimal): Boolean = notifications.zero(`usd`)
+  def zeroBalance(usd: BigDecimal): Boolean = notifications.zero(usd)
 
 }
