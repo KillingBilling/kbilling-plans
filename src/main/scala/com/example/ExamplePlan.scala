@@ -22,7 +22,7 @@ object ExamplePlan extends BillingPlan {
   )
 
   val notifications = Map(
-    "zeroBalance" -> Notification(_("USD") < 0)
+    "usdBalanceBelowZero" -> Notification(_("USD") < 0)
   )
 
 }

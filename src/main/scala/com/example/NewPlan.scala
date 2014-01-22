@@ -26,6 +26,6 @@ object NewPlan {
 
   }
 
-  def zeroBalance(usd: BigDecimal): Boolean = notifications.zero(usd)
+  def belowZeroBalance(usd: BigDecimal): Boolean = notifications.belowZero(usd)
 
 }
