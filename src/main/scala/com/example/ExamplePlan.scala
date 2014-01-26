@@ -21,6 +21,8 @@ object ExamplePlan extends BillingPlan {
     })
   )
 
+  val values: Map[String, Value] = Map.empty
+
   val notifications = Map(
     "usdBalanceBelowZero" -> Notification(_("USD") < 0)
   )
